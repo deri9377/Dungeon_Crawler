@@ -1,0 +1,35 @@
+Iteration 0:All the characters are dead. Game Over!
+Iteration 1:All the characters are dead. Game Over!
+Iteration 2:Congragulations! You won by killing all the monsters
+Iteration 3:All the characters are dead. Game Over!
+Iteration 4:All the characters are dead. Game Over!
+Iteration 5:Congragulations! You won by killing all the monsters
+Iteration 6:Congragulations! You won by collecting enough treasure.
+Iteration 7:Congragulations! You won by killing all the monsters
+Iteration 8:All the characters are dead. Game Over!
+Iteration 9:Congragulations! You won by killing all the monsters
+Iteration 10:Congragulations! You won by collecting enough treasure.
+Iteration 11:All the characters are dead. Game Over!
+Iteration 12:Congragulations! You won by killing all the monsters
+Iteration 13:Congragulations! You won by collecting enough treasure.
+Iteration 14:All the characters are dead. Game Over!
+Iteration 15:Congragulations! You won by killing all the monsters
+Iteration 16:Congragulations! You won by collecting enough treasure.
+Iteration 17:Congragulations! You won by killing all the monsters
+Iteration 18:Congragulations! You won by killing all the monsters
+Iteration 19:All the characters are dead. Game Over!
+Iteration 20:All the characters are dead. Game Over!
+Iteration 21:All the characters are dead. Game Over!
+Iteration 22:All the characters are dead. Game Over!
+Iteration 23:All the characters are dead. Game Over!
+Iteration 24:Congragulations! You won by killing all the monsters
+Iteration 25:All the characters are dead. Game Over!
+Iteration 26:Congragulations! You won by collecting enough treasure.
+Iteration 27:All the characters are dead. Game Over!
+Iteration 28:Congragulations! You won by collecting enough treasure.
+Iteration 29:Congragulations! You won by killing all the monsters
+All Test.adventurers dead: 14
+All Test.creatures dead: 10
+Wins by treasure: 6
+
+Process finished with exit code 0

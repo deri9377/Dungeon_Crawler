@@ -1,0 +1,5334 @@
+C:\Users\devin\.jdks\openjdk-18.0.2.1\bin\java.exe -javaagent:C:\Users\devin\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4345.14\lib\idea_rt.jar=62443:C:\Users\devin\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\222.4345.14\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "D:\Drive\My Drive\Fall2022\CSCI4448\Project_3\target\classes;C:\Users\devin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\devin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\devin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\devin\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\devin\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.1\junit-jupiter-5.9.1.jar;C:\Users\devin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\devin\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\devin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.1\junit-jupiter-params-5.9.1.jar;C:\Users\devin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\devin\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar" main.world.World
+
+=====================================================
+RotLA Turn 0:
+0-1-1:BRST:-
+1-0-0:-:O      1-0-1:-:O      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:SS     2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:S      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:O
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:B      4-0-2:-:B
+4-1-0:-:BS     4-1-1:-:-      4-1-2:-:-
+4-2-0:-:B      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure:  - HP: 3
+Runner - Treasure:  - HP: 3
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure:  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 0
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-1          3              []
+Runner         2-1-1          3              []
+Sneaker        1-1-1          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 9
+Creatures      Room
+Blinker        3-0-1
+Orbiter        1-0-1
+Blinker        4-0-1
+Seeker         4-1-0
+Orbiter        3-2-2
+Blinker        4-0-1
+Orbiter        1-0-0
+Blinker        1-0-2
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 1:
+0-1-1:-:-
+1-0-0:-:O      1-0-1:-:O      1-0-2:-:B
+1-1-0:-:-      1-1-1:BST:-    1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:R:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:B      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:O
+4-0-0:-:-      4-0-1:-:BB     4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure:  - HP: 3
+Runner - Treasure:  - HP: 3
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 1
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-2          3              []
+Runner         2-1-1          2              []
+Sneaker        1-1-2          3              []
+Thief          2-1-1          3              [gem]
+Total Active Creatures: 9
+Creatures      Room
+Blinker        4-1-0
+Orbiter        1-0-2
+Blinker        1-2-0
+Seeker         4-1-0
+Orbiter        3-2-1
+Blinker        2-0-0
+Orbiter        1-0-1
+Blinker        1-2-2
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 2:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:O      1-0-2:-:O
+1-1-0:-:O      1-1-1:-:-      1-1-2:BS:-
+1-2-0:-:B      1-2-1:-:-      1-2-2:-:B
+2-0-0:-:B      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:RT:-     2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:O      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:BS     4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure:  - HP: 3
+Runner - Treasure:  - HP: 2
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 2
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-1          3              []
+Runner         2-2-2          2              []
+Sneaker        1-1-1          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 9
+Creatures      Room
+Blinker        3-2-1
+Orbiter        1-1-2
+Blinker        4-1-1
+Seeker         4-1-0
+Orbiter        3-2-0
+Blinker        4-0-2
+Orbiter        1-0-0
+Blinker        3-1-1
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 3:
+0-1-1:-:-
+1-0-0:-:O      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:BST:-    1-1-2:-:O
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:R:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:B      3-1-2:-:-
+3-2-0:-:O      3-2-1:-:B      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:B
+4-1-0:-:S      4-1-1:-:B      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure:  - HP: 3
+Runner - Treasure:  - HP: 2
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+Brawler celebrated!: jump  jump  shout  spin
+
+
+=====TRACKER UPDATE=====
+Tracker: Turn 3
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-2          3              []
+Runner         2-2-2          2              []
+Sneaker        2-1-1          3              []
+Thief          1-2-1          3              [gem]
+Total Active Creatures: 8
+Creatures      Room
+Blinker        1-0-2
+Blinker        1-0-0
+Seeker         4-1-0
+Orbiter        3-1-0
+Blinker        1-1-0
+Orbiter        1-0-1
+Blinker        1-2-0
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 4:
+0-1-1:-:-
+1-0-0:-:B      1-0-1:-:O      1-0-2:-:B
+1-1-0:-:B      1-1-1:-:-      1-1-2:B:-
+1-2-0:-:B      1-2-1:T:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:S:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:R:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:O      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure:  - HP: 3
+Runner - Treasure:  - HP: 2
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 4
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-2-2          3              [gem]
+Runner         2-2-2          2              []
+Sneaker        2-1-2          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 7
+Creatures      Room
+Blinker        4-2-0
+Blinker        2-2-1
+Seeker         4-1-0
+Orbiter        3-2-0
+Blinker        3-2-2
+Orbiter        1-0-0
+Blinker        4-0-0
+
+=====================================================
+RotLA Turn 5:
+0-1-1:-:-
+1-0-0:-:O      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:T:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:B:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:S:-
+2-2-0:-:-      2-2-1:-:B      2-2-2:R:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:O      3-2-1:-:-      3-2-2:-:B
+4-0-0:-:B      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:B      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 2
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 5
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-2          3              [gem]
+Runner         2-1-1          1              []
+Sneaker        2-1-1          3              []
+Thief          1-2-1          3              [gem]
+Total Active Creatures: 7
+Creatures      Room
+Blinker        3-0-0
+Blinker        3-1-2
+Seeker         4-1-0
+Orbiter        3-1-0
+Blinker        1-2-0
+Orbiter        1-0-1
+Blinker        4-2-2
+
+=====================================================
+RotLA Turn 6:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:O      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:B:-
+1-2-0:-:B      1-2-1:T:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:RS:-     2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:B      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:O      3-1-1:-:-      3-1-2:-:B
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:B
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 1
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 6
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-1          3              [gem]
+Runner         2-2-2          1              []
+Sneaker        1-1-1          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 7
+Creatures      Room
+Blinker        2-0-0
+Blinker        1-0-2
+Seeker         4-1-0
+Orbiter        3-2-0
+Blinker        3-0-0
+Orbiter        1-0-2
+Blinker        4-0-2
+
+=====================================================
+RotLA Turn 7:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:BO
+1-1-0:-:-      1-1-1:BST:-    1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:B      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:R:-
+3-0-0:-:B      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:O      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:B
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 1
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 7
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Runner         2-2-2          1              []
+Sneaker        1-1-2          3              []
+Thief          1-2-1          3              [gem]
+Total Active Creatures: 7
+Creatures      Room
+Blinker        1-1-0
+Blinker        2-0-2
+Seeker         4-1-0
+Orbiter        3-1-0
+Blinker        2-1-2
+Orbiter        1-0-1
+Blinker        4-2-2
+
+=====================================================
+RotLA Turn 8:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:O      1-0-2:-:-
+1-1-0:-:B      1-1-1:-:-      1-1-2:S:-
+1-2-0:-:-      1-2-1:T:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:B
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:B
+2-2-0:-:-      2-2-1:-:-      2-2-2:R:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:O      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:B
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 1
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 8
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-1          3              [gem]
+Runner         2-1-1          1              []
+Sneaker        1-2-2          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 6
+Creatures      Room
+Blinker        2-1-1
+Blinker        4-2-0
+Seeker         4-1-0
+Orbiter        3-2-0
+Orbiter        1-0-0
+Blinker        4-1-1
+
+=====================================================
+RotLA Turn 9:
+0-1-1:-:-
+1-0-0:-:O      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:BT:-     1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:S:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:R:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:O      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:B      4-1-2:-:-
+4-2-0:-:B      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 1
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 9
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-2-1          3              [gem]
+Runner         2-1-1          1              []
+Sneaker        1-2-1          3              []
+Thief          1-1-2          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        4-2-1
+Seeker         4-1-0
+Orbiter        3-1-0
+Orbiter        1-1-0
+Blinker        2-0-2
+
+=====================================================
+RotLA Turn 10:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:T:-
+1-2-0:-:-      1-2-1:BS:-     1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:B
+2-1-0:-:-      2-1-1:R:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:O      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:B      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 1
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 10
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        1-1-1          3              [gem]
+Runner         2-2-2          1              []
+Sneaker        1-1-1          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        4-0-1
+Seeker         4-1-0
+Orbiter        3-2-0
+Orbiter        1-2-0
+Blinker        3-0-2
+
+=====================================================
+RotLA Turn 11:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:BST:-    1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:R:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:B
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:O      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:B      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 1
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 11
+Total Active Adventurers: 4
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Runner         2-2-2          1              []
+Sneaker        1-1-2          3              []
+Thief          1-2-1          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        2-2-0
+Seeker         4-1-0
+Orbiter        3-2-1
+Orbiter        1-1-0
+Blinker        4-0-1
+
+=====================================================
+RotLA Turn 12:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:S:-
+1-2-0:-:-      1-2-1:T:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:B      2-2-1:-:-      2-2-2:R:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:O      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:B      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 1
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 12
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Sneaker        1-1-1          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        2-0-0
+Seeker         4-1-0
+Orbiter        3-2-0
+Orbiter        1-2-0
+Blinker        1-2-1
+
+=====================================================
+RotLA Turn 13:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:ST:-     1-1-2:-:-
+1-2-0:-:O      1-2-1:-:B      1-2-2:-:-
+2-0-0:-:B      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:O      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+Sneaker celebrated!: jump  spin  spin
+
+Thief celebrated!: dance  dance  jump  jump  shout  shout  spin  spin
+
+
+=====TRACKER UPDATE=====
+Tracker: Turn 13
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Sneaker        1-2-1          3              []
+Thief          1-2-1          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        1-2-2
+Seeker         4-1-0
+Orbiter        3-2-1
+Orbiter        1-2-1
+Blinker        1-2-1
+
+=====================================================
+RotLA Turn 14:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:ST:BO    1-2-2:-:B
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:O      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 14
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Sneaker        1-1-1          3              []
+Thief          1-1-1          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        2-0-1
+Seeker         4-1-0
+Orbiter        3-2-0
+Orbiter        1-2-2
+Blinker        1-0-2
+
+=====================================================
+RotLA Turn 15:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:B
+1-1-0:-:-      1-1-1:ST:-     1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:B      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:O      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 15
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Sneaker        2-1-1          3              []
+Thief          2-1-1          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        3-1-0
+Seeker         4-1-0
+Orbiter        3-2-1
+Orbiter        1-1-2
+Blinker        2-2-0
+
+=====================================================
+RotLA Turn 16:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:ST:-     2-1-2:-:-
+2-2-0:-:B      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:B      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:O      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 16
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Sneaker        3-1-1          3              []
+Thief          3-1-1          3              [gem]
+Total Active Creatures: 5
+Creatures      Room
+Blinker        2-1-2
+Seeker         4-1-0
+Orbiter        3-2-0
+Orbiter        1-2-2
+Blinker        1-1-1
+
+=====================================================
+RotLA Turn 17:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:B      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:B
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:BST:-    3-1-2:-:-
+3-2-0:-:O      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 17
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Sneaker        3-1-2          3              []
+Thief          3-1-2          3              [gem]
+Total Active Creatures: 4
+Creatures      Room
+Seeker         4-1-0
+Orbiter        3-2-1
+Orbiter        1-1-2
+Blinker        4-2-2
+
+=====================================================
+RotLA Turn 18:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:ST:-
+3-2-0:-:-      3-2-1:-:O      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:B
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 18
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        2-2-1          3              [gem]
+Sneaker        3-1-1          3              []
+Thief          3-1-1          3              [gem]
+Total Active Creatures: 4
+Creatures      Room
+Seeker         4-1-0
+Orbiter        3-2-2
+Orbiter        1-2-2
+Blinker        2-1-2
+
+=====================================================
+RotLA Turn 19:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:B
+2-2-0:-:-      2-2-1:B:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:ST:-     3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:O
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 3
+Thief - Treasure: gem  - HP: 3
+
+=====TRACKER UPDATE=====
+Tracker: Turn 19
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Sneaker        3-1-2          2              []
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 4
+Creatures      Room
+Seeker         4-1-0
+Orbiter        3-1-2
+Orbiter        1-2-1
+Blinker        4-1-0
+
+=====================================================
+RotLA Turn 20:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:S:O
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:SB     4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 2
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 20
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Sneaker        3-1-1          2              []
+Thief          3-2-2          4              [potion, gem]
+Total Active Creatures: 4
+Creatures      Room
+Seeker         4-1-0
+Orbiter        3-2-2
+Orbiter        1-2-0
+Blinker        4-2-2
+
+=====================================================
+RotLA Turn 21:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:BS:-     3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:T:O
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:S      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:B
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 2
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 21
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Sneaker        4-1-1          2              []
+Thief          3-1-2          4              [potion, gem]
+Total Active Creatures: 3
+Creatures      Room
+Seeker         4-1-1
+Orbiter        1-1-0
+Blinker        1-1-2
+
+=====================================================
+RotLA Turn 22:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:B
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:T:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:S:S      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure:  - HP: 2
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 22
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Sneaker        2-1-3          1              [armor]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 3
+Creatures      Room
+Seeker         4-2-1
+Orbiter        1-2-0
+Blinker        4-1-1
+
+=====================================================
+RotLA Turn 23:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:BT:-     3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:B      4-1-2:-:-
+4-2-0:-:-      4-2-1:S:S      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 1
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 23
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Sneaker        2-1-2          1              [armor]
+Thief          3-1-2          4              [potion, gem]
+Total Active Creatures: 3
+Creatures      Room
+Seeker         4-2-1
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 24:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:S:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:T:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:S:S      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 1
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 24
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Sneaker        2-2-2          1              [armor]
+Thief          3-2-2          4              [potion, gem]
+Total Active Creatures: 3
+Creatures      Room
+Seeker         4-2-1
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 25:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:S:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:BT:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:S:S      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 1
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 25
+Total Active Adventurers: 3
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Sneaker        2-1-2          1              [armor]
+Thief          3-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 26:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:S:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:T:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:S:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 1
+Thief - Treasure: potion gem  - HP: 4
+
+
+
+=====TRACKER UPDATE=====
+Tracker: Turn 26
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 27:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 27
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 28:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 28
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 29:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 29
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 30:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 30
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 31:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 31
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 32:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 32
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 33:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 33
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 34:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 34
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 35:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 35
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 36:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 36
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 37:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 37
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 38:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 38
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 39:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 39
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 40:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 40
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 41:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:BT:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 41
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          3-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 42:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:BT:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 42
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 43:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:BT:-     3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 43
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 44:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 44
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 45:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 45
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 46:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 46
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 47:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:B:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 47
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 48:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 48
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 49:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:B:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 49
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 50:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 50
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 51:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:BT:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 51
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 52:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:BT:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 52
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 53:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 53
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 54:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 54
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 55:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:BT:-     4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 55
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 56:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 56
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 57:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 57
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 58:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:B:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 58
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 59:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:B:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 59
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 60:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 60
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 61:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 61
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 62:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 62
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 63:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 63
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 64:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 64
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 65:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:BT:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 65
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 66:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 66
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 67:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:BT:-     4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 67
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 68:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 68
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 69:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 69
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 70:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 70
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 71:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 71
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 72:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 72
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 73:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 73
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 74:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 74
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 75:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:B:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 75
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 76:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 76
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 77:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:B:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+Thief celebrated!: shout  shout
+
+
+=====TRACKER UPDATE=====
+Tracker: Turn 77
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 78:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:T:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 78
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-0
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 79:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 79
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 80:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 80
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 81:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:T:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+Thief celebrated!: dance  spin  spin
+
+
+=====TRACKER UPDATE=====
+Tracker: Turn 81
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 82:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:T:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 82
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 83:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:BT:-     3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 83
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-1
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 84:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 84
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 85:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 85
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-1-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 86:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 86
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 2
+Creatures      Room
+Orbiter        1-2-2
+Blinker        2-1-1
+
+=====================================================
+RotLA Turn 87:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:B      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:BT:-     3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+Brawler celebrated!: dance  dance  shout
+
+
+=====TRACKER UPDATE=====
+Tracker: Turn 87
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 88:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:BT:-     2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 88
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-2-1          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 89:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:B:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 89
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 90:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 90
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 91:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:BT:-     3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 91
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 92:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 92
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-2          3              [gem]
+Thief          3-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 93:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:B:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:T:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 93
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 94:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 94
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        1-1-1          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 95:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:B:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 95
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 96:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:BT:-     2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 96
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-2          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 97:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:BT:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 97
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 98:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 98
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-2          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 99:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:BT:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 99
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 100:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 100
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 101:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 101
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 102:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 102
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 103:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 103
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 104:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:T:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 104
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 105:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 105
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 106:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 106
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 107:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 107
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 108:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 108
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 109:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 109
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 110:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 110
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          2-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 111:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:T:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 111
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 112:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 112
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 113:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:T:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 113
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 114:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:T:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 114
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 115:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 115
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          3-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 116:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:T:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 116
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 117:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 117
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          3-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 118:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:BT:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 118
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          3-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 119:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:T:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 119
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          3-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 120:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:BT:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 120
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 121:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 121
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 122:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 122
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 123:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 123
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 124:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 124
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 125:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 125
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 126:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 126
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        1-1-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 127:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:B:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 127
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        2-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 128:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:B:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 128
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 129:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 129
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 130:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 130
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 131:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:T:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 131
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 132:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 132
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 133:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 133
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 134:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:T:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 134
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 135:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 135
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 136:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:T:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 136
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 137:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:T:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 137
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 138:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 138
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          4-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 139:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:BT:-     4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 139
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          4-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 140:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:BT:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 140
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          4-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 141:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:BT:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 141
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          4-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 142:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:BT:-     4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 142
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          3-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 143:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:T:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 143
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-2
+
+=====================================================
+RotLA Turn 144:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:O
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:T:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:B:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 144
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 145:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:B:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 145
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 146:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:B:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 146
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          2-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 147:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:T:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 147
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 148:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 148
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 149:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 149
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 150:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:B:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 150
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          2-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 151:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:T:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 151
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 152:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:B:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 152
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 153:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:B:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 153
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 154:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:B:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 154
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 155:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 155
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          2-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-1-0
+
+=====================================================
+RotLA Turn 156:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:O      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:T:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 156
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          2-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 157:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:T:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 157
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-1          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 158:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:T:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:B:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 158
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-2-2          3              [gem]
+Thief          2-2-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 159:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:T:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:B:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 159
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-2          3              [gem]
+Thief          2-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 160:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:T:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:B:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 160
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        3-1-1          3              [gem]
+Thief          1-1-1          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-2
+
+=====================================================
+RotLA Turn 161:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:T:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:-:-      1-2-2:-:O
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:B:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 161
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-1          3              [gem]
+Thief          1-1-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-1
+
+=====================================================
+RotLA Turn 162:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:T:-
+1-2-0:-:-      1-2-1:-:O      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:B:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 162
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-1-2          3              [gem]
+Thief          1-2-2          4              [potion, gem]
+Total Active Creatures: 1
+Creatures      Room
+Orbiter        1-2-0
+
+=====================================================
+RotLA Turn 163:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:O      1-2-1:-:-      1-2-2:T:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:B:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:-:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+
+=====TRACKER UPDATE=====
+Tracker: Turn 163
+Total Active Adventurers: 2
+Adventurers    Room           Health         Treasure
+Brawler        4-2-2          3              [gem]
+Thief          1-2-1          4              [potion, gem]
+Total Active Creatures: 0
+Creatures      Room
+
+=====================================================
+RotLA Turn 164:
+0-1-1:-:-
+1-0-0:-:-      1-0-1:-:-      1-0-2:-:-
+1-1-0:-:-      1-1-1:-:-      1-1-2:-:-
+1-2-0:-:-      1-2-1:T:-      1-2-2:-:-
+2-0-0:-:-      2-0-1:-:-      2-0-2:-:-
+2-1-0:-:-      2-1-1:-:-      2-1-2:-:-
+2-2-0:-:-      2-2-1:-:-      2-2-2:-:-
+3-0-0:-:-      3-0-1:-:-      3-0-2:-:-
+3-1-0:-:-      3-1-1:-:-      3-1-2:-:-
+3-2-0:-:-      3-2-1:-:-      3-2-2:-:-
+4-0-0:-:-      4-0-1:-:-      4-0-2:-:-
+4-1-0:-:-      4-1-1:-:-      4-1-2:-:-
+4-2-0:-:-      4-2-1:-:-      4-2-2:B:-
+
+Brawler - Treasure: gem  - HP: 3
+Runner - Treasure:  - HP: 0(ELIMINATED)
+Sneaker - Treasure: armor  - HP: 0(ELIMINATED)
+Thief - Treasure: potion gem  - HP: 4
+Congragulations! You won by killing all the monsters
+
+Process finished with exit code 0

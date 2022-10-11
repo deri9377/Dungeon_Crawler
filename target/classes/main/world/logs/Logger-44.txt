@@ -1,0 +1,3 @@
+[Adventurer]Brawler moved into room: 4-1-2
+[Adventurer]Sneaker moved into room: 1-2-2
+[Adventurer]Thief moved into room: 2-1-1
