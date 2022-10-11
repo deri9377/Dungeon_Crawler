@@ -1,7 +1,0 @@
-[Adventurer]Brawler moved into room: 3-1-1
-[Adventurer]Sneaker moved into room: 1-1-1
-[Adventurer]Thief moved into room: 1-2-1
-[Creature]Orbiter moved into room: 2-2-1
-[Creature]Orbiter moved into room: 3-1-2
-[Creature]Blinker moved into room: 1-0-1
-[Creature]Orbiter moved into room: 4-1-0

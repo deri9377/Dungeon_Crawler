@@ -1,5 +1,0 @@
-[Adventurer]Brawler moved into room: 3-2-1
-Brawler won against Orbiter
-Orbiter was defeated 
-[Adventurer]Sneaker moved into room: 1-2-1
-[Adventurer]Thief moved into room: 1-1-1
