@@ -37,14 +37,14 @@ public abstract class FightAttribute {
         if(creatureRoll > advRoll){
 //            Damage Taken
             adventurer.setHealth(adventurer.getHealth() - 1);
-            adventurer.o.notifyCombat(adventurer, creature, false);
-            adventurer.o.notifyHealthChange(adventurer, adventurer.getHealth());
+            // adventurer.o.notifyCombat(adventurer, creature, false);
+            // adventurer.o.notifyHealthChange(adventurer, adventurer.getHealth());
         }
         if(creatureRoll < advRoll){
 //            Victory Against Creature
             creature.setAlive(false);
             creatureDied = true;
-            adventurer.o.notifyCombat(adventurer, creature, true);
+            // adventurer.o.notifyCombat(adventurer, creature, true);
         }
         return creatureDied;
     }

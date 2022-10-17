@@ -12,11 +12,13 @@ import java.util.Random;
  */
 public class Careful extends SearchMethod{
 
+    private final int rollThreshold = 4;
+
     @Override
     public void search(Adventurer adventurer, Room room) {
         ArrayList<Treasure> treasures = room.getTreasure();
         int roll = adventurer.getDie().searchDie();
-        if (roll >= 7) {                                    //Need to roll above 7
+        if (roll >= rollThreshold) {                                    //Need to roll above 7
             for (int i = 0; i < treasures.size(); i++) {
                 Treasure t = treasures.get(i);
                 if (t.getName().equals("trap")) {           // Takes damage from a found trap

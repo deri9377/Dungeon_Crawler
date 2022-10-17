@@ -29,7 +29,7 @@ public class WorldTest {
     @BeforeAll
     static void initAll() {
         w = new World();
-        w.generateAdventurers();
+        w.createAdventurers();
         w.generateCreatures();
         w.generateTreasure();
     }

@@ -18,6 +18,7 @@ public class Sneaker extends Adventurer{
     public Sneaker(int level, int y, int x) {
         super(level, y, x);     // Initializes default variables through super
         setName("Sneaker");
+        setHealth(8);
         setFightAttribute(new Stealth());
         setSearchMethod(new Quick());
     }

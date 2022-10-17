@@ -9,12 +9,12 @@ import java.util.Random;
 
 public class Quick extends SearchMethod{
 
-
+    private final int rollThreshold = 6;
     @Override
     public void search(Adventurer adventurer, Room room) {
         ArrayList<Treasure> treasures = room.getTreasure();
         int roll = adventurer.getDie().searchDie();
-        if (new Random().nextInt(3) != 1 && roll >= 9) {       //either misses the search or has to roll above a 9
+        if (new Random().nextInt(3) != 1 && roll >= rollThreshold) {       //either misses the search or has to roll above a 9
             for (int i = 0; i < treasures.size(); i++) {
                 adventurer.addTreasure(treasures.get(i));
                 adventurer.o.treasureFound(adventurer, treasures.get(i).getName());

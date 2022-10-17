@@ -20,6 +20,7 @@ public class Runner extends Adventurer{
     public Runner(int level, int y, int x) {
         super(level, y, x);         // instantiate defaults through super class
         setName("Runner");
+        setHealth(10);
         setFightAttribute(new Untrained());
         setSearchMethod(new Quick());
     }

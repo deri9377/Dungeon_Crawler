@@ -11,11 +11,12 @@ import java.util.ArrayList;
  */
 public class Careless extends SearchMethod{
 
+    private final int rollThreshold = 7;
     @Override
     public void search(Adventurer adventurer, Room room) {
         ArrayList<Treasure> treasures = room.getTreasure();
         int roll = adventurer.getDie().searchDie();
-        if (roll >= 10) {                                       //must roll above a 10
+        if (roll >= rollThreshold) {                                       //must roll above a 10
             for (int i = 0; i < treasures.size(); i++) {
                 adventurer.addTreasure(treasures.get(i));
                 adventurer.o.treasureFound(adventurer, treasures.get(i).getName());

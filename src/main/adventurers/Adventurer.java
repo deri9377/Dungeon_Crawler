@@ -13,10 +13,7 @@ import main.world.object.*;
 
 import javax.imageio.IIOException;
 import javax.xml.namespace.QName;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Random;
+import java.util.*;
 import java.io.IOException;
 
 /**
@@ -78,15 +75,35 @@ public abstract class Adventurer {
         o = world.getObserver();
         //TODO:observer call here probs (need method to call observers)
         o.move_event(this, this.pos);
+        Scanner scanner = new Scanner(System.in);
         ArrayList<Creature> creatures = world.getRoom(getLevel(), getY(), getX()).getCreatures();
         if(!creatures.isEmpty()){
-            for (int i = 0; i < creatures.size(); i++) {
-                if (creatures.get(i).isAlive()) {
-                    fight(creatures.get(i));
+            System.out.println("What action would you like to take");
+            System.out.println("1: Fight");
+            System.out.println("2: Move");
+            String action = scanner.nextLine().toLowerCase();
+            if (action.equals("1") || action.equals("fight")) {
+                for (int i = 0; i < creatures.size(); i++) {
+                    if (creatures.get(i).isAlive()) {
+                        fight(creatures.get(i));
+                    }
                 }
+            } else if (action.equals("2") || action.equals("move")) {
+                move(world);
             }
         } else {
-            searchMethod.search(this, world.getRoom(getLevel(), getY(), getX()));
+            System.out.println("What action would you like to take");
+            System.out.println("1: Move");
+            System.out.println("2: Search");
+            System.out.println("3: Celebrate");
+            String action = scanner.nextLine().toLowerCase();
+            if (action.equals("1") || action.equals("move")) {
+                move(world);
+            } else if (action.equals("2") || action.equals("search")) {
+                searchMethod.search(this, world.getRoom(getLevel(), getY(), getX()));
+            } else if (action.equals("3") || action.equals("Celebrate")) {
+                //TODO: there is an issue here. We need to be able to celebrate without fighting
+            }
         }
     }
 
@@ -114,6 +131,7 @@ public abstract class Adventurer {
             World parameter is required in order to get the bounds of the Test.world so that it is impossible for the Adventurer
             to move to an invalid room position.
         */
+        Scanner scanner = new Scanner(System.in);
         w.getRoom(getLevel(), getY(), getX()).remove(this); // The character needs to update the room it leaves as well as goes into so that its being tracked
         int numLevels = w.getNumLevels();
         int depth = w.getDepth();
@@ -144,23 +162,40 @@ public abstract class Adventurer {
                 possibleMoves.add(5);
             }
         }
-        int moveDir = possibleMoves.get(new Random().nextInt(possibleMoves.size())); //choose a random move out of the possible rooms the Adventurer can move to
-        if(moveDir == 0){ //Move North
+        // int moveDir = possibleMoves.get(new Random().nextInt(possibleMoves.size())); //choose a random move out of the possible rooms the Adventurer can move to
+        System.out.println("Possible moves are: ");
+        for (int i = 0; i < possibleMoves.size(); i ++) {
+            if (possibleMoves.get(i) == 0) {
+                System.out.println("North: " + getLevel() + "-" + (getY() - 1) + "-" + getX());
+            } else if (possibleMoves.get(i) == 1) {
+                System.out.println("South: " + getLevel() + "-" + (getY() + 1) + "-" + getX());
+            } else if (possibleMoves.get(i) == 2) {
+                System.out.println("East: " + getLevel() + "-" + getY() + "-" + (getX() - 1));
+            } else if (possibleMoves.get(i) == 3) {
+                System.out.println("West: " + getLevel() + "-" + getY() + "-" + (getX() - 1));
+            } else if (possibleMoves.get(i) == 4) {
+                System.out.println("Up: " + (getLevel() + 1) + "-" + getY() + "-" + getX());
+            } else if (possibleMoves.get(i) == 5) {
+                System.out.println("Down: " + (getLevel() - 1) + "-" + getY() + "-" + getX());
+            }
+        }
+        String moveDir = scanner.nextLine();
+        if(moveDir.equals("0") || moveDir.equals("north")){ //Move North
             setY(getY() - 1);
         }
-        if(moveDir == 1){ //Move South
+        if(moveDir.equals("1") || moveDir.equals("south")){ //Move South
             setY(getY() + 1);
         }
-        if(moveDir == 2){ //Move East
+        if(moveDir.equals("2") || moveDir.equals("east")){ //Move East
             setX(getX() + 1);
         }
-        if(moveDir == 3){ //Move West
+        if(moveDir.equals("3") || moveDir.equals("west")){ //Move West
             setX(getX() - 1);
         }
-        if (moveDir == 4) { // Move Up
+        if (moveDir.equals("4") || moveDir.equals("up")) { // Move Up
             setLevel(getLevel() + 1);
         }
-        if (moveDir == 5) { //Move down
+        if (moveDir.equals("5") || moveDir.equals("down")) { //Move down
             setLevel(getLevel() - 1);
         }
         w.getRoom(getLevel(), getY(), getX()).addAdventurer(this); // Add the Adventurer to the new room it has entered

@@ -13,10 +13,7 @@ public class Brawler extends Adventurer{
      */
     public Brawler() {
         super();        //instantiate varaibles through super class
-        setDie(new Die(2, 0));
-        setName("Brawler");
-        setFightAttribute(new Expert());
-        setSearchMethod(new Careless());
+        build();
     }
 
     /**
@@ -27,9 +24,15 @@ public class Brawler extends Adventurer{
      */
     public Brawler(int level, int y, int x) {
         super(level, y, x);             //instantate variables through super class
+        build();
+    }
+
+    private void build() {
         setDie(new Die(2, 0));
         setName("Brawler");
+        setHealth(12);
         setFightAttribute(new Expert());
         setSearchMethod(new Careless());
     }
+
 }

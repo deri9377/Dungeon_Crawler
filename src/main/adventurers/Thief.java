@@ -13,10 +13,6 @@ public class Thief extends Adventurer {
      */
     public Thief(){
         super();
-        setDie(new Die(1, 1));
-        setName("Thief");
-        setFightAttribute(new Stealth());
-        setSearchMethod(new Careful());
     }
 
     /**
@@ -27,8 +23,12 @@ public class Thief extends Adventurer {
      */
     public Thief(int level, int y, int x) {
         super(level, y, x);
+    }
+
+    private void build() {
         setDie((new Die(1, 1)));
         setName("Thief");
+        setHealth(10);
         setFightAttribute(new Stealth());
         setSearchMethod(new Careful());
     }

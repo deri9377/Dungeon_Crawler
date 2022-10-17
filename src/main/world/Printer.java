@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class Printer {
-        private ArrayList<Adventurer> a;
+        private ArrayList<Adventurer> a = new ArrayList<>();
     /**
      *  These privates hold references for the Test.adventurers and Test.creatures to print their statuses each turn
      */
-        private ArrayList<Creature> c;
+        private ArrayList<Creature> c = new ArrayList<>();
         private int SPACING = 15;
 
         private ArrayList<Integer> counts = new ArrayList<>();

@@ -12,6 +12,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Random;
+import java.util.Scanner;
 
 public class World {
 
@@ -35,8 +36,8 @@ public class World {
     private int depth;
     private int turn;
 
-    private ArrayList<Adventurer> adventurers;
-    private ArrayList<Creature> creatures;
+    private ArrayList<Adventurer> adventurers = new ArrayList<>();
+    private ArrayList<Creature> creatures = new ArrayList<>();
 
     private Printer printer = new Printer();
 
@@ -86,45 +87,26 @@ public class World {
         while (true) {
             Logger logger = observer.createLogger(getTurn());
             // Start of turn checking win/lose conditions
-            boolean aAlive = false;
-            boolean cAlive = false;
-            int treasure = 0;
+            boolean aAlive = true;
             for (int i = 0; i < rooms.size(); i++) {
-                treasure += countTreasure(adventurers);
-                ArrayList<Adventurer> a = rooms.get(i).getAdventurers();
-                ArrayList<Creature> c = rooms.get(i).getCreatures();
+                ArrayList<Adventurer> a = getAdventurers();
                 for (int j = 0; j < a.size(); j++) {
-                    if (a.get(j).isAlive()) {
-                        aAlive = true;
-                    }
-                }
-                for (int j = 0; j < c.size(); j++) {
-                    if (c.get(j).isAlive()) {
-                        cAlive = true;
+                    if (!a.get(j).isAlive()) {
+                        aAlive = false;
                     }
                 }
             }
             if (!aAlive) {
                 printer.printer(this);
-                System.out.println("All the characters are dead. Game Over!");
-                return;
-            }
-            if(!cAlive) {
-                printer.printer(this);
-                System.out.println("Congragulations! You won by killing all the monsters");
-                return;
-            }
-            if (treasure == 12) {
-                printer.printer(this);
-                System.out.println("Congragulations! You won by collecting all the treasure.");
+                System.out.println("You Died. Game Over!");
                 return;
             }
 
             //Every normal turn
             printer.printer(this);
             runTurns(); //Performs all turn operations
-            observer.deleteLogger(logger);
-            observer.updateTracker(this);
+            // observer.deleteLogger(logger);
+            // observer.updateTracker(this);
             setTurn(getTurn() + 1);
 
         }
@@ -182,6 +164,7 @@ public class World {
                 room.addAdventurer(a);
             }
         }
+        adventurers.add(a);
     }
 
     public void addCreature(Creature c) {
@@ -204,31 +187,33 @@ public class World {
     }
 
 //Generates starting pos for each adventurer/creature and populates referential arrays
-    public void generateAdventurers() {
-        ArrayList<Adventurer> adv = new ArrayList<>();
-        for (int i = 0; i < rooms.size(); i++) {
-            Room room = rooms.get(i);
-            if (room.getLevel() == 0 && room.getY() == 1 && room.getX() == 1) {
-                Brawler b = new Brawler(0, 1, 1);
-                Runner r = new Runner(0, 1, 1);
-                Sneaker s = new Sneaker(0, 1, 1);
-                Thief t = new Thief(0, 1, 1);
-                b.o = observer;
-                r.o = observer;
-                s.o = observer;
-                t.o = observer;
-                room.addAdventurer(b);
-                room.addAdventurer(r);
-                room.addAdventurer(s);
-                room.addAdventurer(t);
-                adv.add(b);
-                adv.add(r);
-                adv.add(s);
-                adv.add(t);
-            }
+    public void createAdventurers() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a character name.");
+        String name = scanner.nextLine();
+        System.out.println("Please enter a valid class: brawler, runner, sneaker or theif");
+        String adventurerType = scanner.nextLine();
+        adventurerType = adventurerType.toLowerCase();
+        while (!(adventurerType.equals("brawler") || adventurerType.equals("runner") || adventurerType.equals("sneaker")
+                || adventurerType.equals("theif"))) {
+            System.out.println("Please enter a valid class: brawler, runner, sneaker or theif");
+            adventurerType = scanner.nextLine();
+            adventurerType = adventurerType.toLowerCase();
         }
-        setAdventurers(adv);
-        printer.setAdventurer(adv);
+        adventurerType = adventurerType.toLowerCase();
+        if  (adventurerType.equals("brawler")) {
+            Brawler brawler = new Brawler(0, 1, 1);
+            addAdventurer(brawler);
+        } else if (adventurerType.equals("runner")) {
+            Runner runner = new Runner(0, 1, 1);
+            addAdventurer(runner);
+        } else if (adventurerType.equals("sneaker")) {
+            Sneaker sneaker = new Sneaker(0, 1, 1);
+            addAdventurer(sneaker);
+        } else if (adventurerType.equals("theif")) {
+            Thief theif = new Thief(0, 1, 1);
+            addAdventurer(theif);
+        }
     }
 
     public void generateCreatures() {
@@ -304,7 +289,7 @@ public class World {
 
     public static void main(String[] args) {
         World w = new World();
-        w.generateAdventurers();
+        w.createAdventurers();
         w.generateCreatures();
         w.generateTreasure();
         w.runGame();
