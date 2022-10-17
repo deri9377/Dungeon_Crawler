@@ -15,7 +15,7 @@ public class BrawlerTest {
             if (room.getLevel() == b.getLevel() && room.getY() == b.getY() && room.getX() == b.getX()) {
                 System.out.println("turn");
                 for (int j = 0; j < 10; j++) {
-                    b.turn(w);
+                    b.move(w);
                 }
             }
         }

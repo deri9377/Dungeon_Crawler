@@ -1,6 +1,10 @@
 package main.world;
 
 import main.adventurers.*;
+import main.command.CelebrateCommand;
+import main.command.FightCommand;
+import main.command.MoveCommand;
+import main.command.SearchCommand;
 import main.creatures.Blinker;
 import main.creatures.Creature;
 import main.creatures.Orbiter;
@@ -127,10 +131,52 @@ public class World {
     /**
      * runTurns() performs all turn operations for every monster and creature that is currently alive in the simulation.
      * First Test.adventurers, then Test.creatures.
+     * This function acts as the main method for the Test.adventurers this keeps our code properly segmented and easy to read
+     * This function performs a move and then the appropriate action phase
      */
     public void runTurns(){
             for (int i = 0; i < adventurers.size(); i++) {
-                adventurers.get(i).turn(this);
+                Adventurer a = adventurers.get(i);
+                if (!a.isAlive()) {
+                    return;
+                }
+                Scanner scanner = new Scanner(System.in);
+                Room room = getRoom(a.getLevel(), a.getY(), a.getX());
+                if(room.checkAliveCreatures()){
+                    System.out.println("What action would you like to take");
+                    System.out.println("1: Fight");
+                    System.out.println("2: Move");
+                    String action = scanner.nextLine().toLowerCase();
+                    if (action.equals("1") || action.equals("fight")) {
+                        ArrayList<Creature> creatures = room.getCreatures();
+                        for (int j = 0; j < creatures.size(); j++) {
+                            if (creatures.get(j).isAlive()) {
+                                FightCommand fc = new FightCommand(a, creatures.get(j));
+                                fc.execute();
+                            }
+                        }
+                    } else if (action.equals("2") || action.equals("move")) {
+                        MoveCommand mc = new MoveCommand(a, this);
+                        mc.execute();
+                    }
+                } else {
+                    System.out.println("What action would you like to take");
+                    System.out.println("1: Move");
+                    System.out.println("2: Search");
+                    System.out.println("3: Celebrate");
+                    String action = scanner.nextLine().toLowerCase();
+                    if (action.equals("1") || action.equals("move")) {
+                        MoveCommand mc = new MoveCommand(a, this);
+                        mc.execute();
+                    } else if (action.equals("2") || action.equals("search")) {
+                        SearchCommand sc = new SearchCommand(a, room);
+                        sc.execute();
+                    } else if (action.equals("3") || action.equals("Celebrate")) {
+                        //TODO: there is an issue here. We need to be able to celebrate without fighting
+                        CelebrateCommand cc = new CelebrateCommand(a);
+                        cc.execute();
+                    }
+                }
             }
             for (int i = 0; i < creatures.size(); i++) {
                 if(creatures.get(i).isAlive()) {

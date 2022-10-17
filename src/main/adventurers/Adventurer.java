@@ -1,20 +1,14 @@
 package main.adventurers;
 
+import main.command.Command;
 import main.creatures.Creature;
 import main.fight.FightAttribute;
-import main.fight.Untrained;
 import main.fight.celebration.*;
 import main.search.SearchMethod;
-import main.world.Die;
+import main.world.*;
 import main.world.Observer;
-import main.world.Room;
-import main.world.World;
 import main.world.object.*;
-
-import javax.imageio.IIOException;
-import javax.xml.namespace.QName;
 import java.util.*;
-import java.io.IOException;
 
 /**
  * This is a great example of an abstract class. We made this class abstract so that we could have the subclasses
@@ -40,6 +34,7 @@ public abstract class Adventurer {
     private Die die;
 
     private String name;
+    private String playerName;
 
     // Standard default and paramaterized constructors assign the position and other variables so they are never null
     public Adventurer() {
@@ -61,50 +56,10 @@ public abstract class Adventurer {
         treasure.put("potion", new Potion());
     }
 
-    /**
-     * This function acts as the main method for the Test.adventurers this keeps our code properly segmented and easy to read
-     * This function performs a move and then the appropriate action phase
-     * @param world: We needed to pass an instance of the Test.world in so that the character could have access to the rooms
-     *             that it moved to. In order to determine to fight or to search for treasure
-     */
-    public void turn(World world) {
-        if (!isAlive()) {
-            return;
-        }
-        move(world);
-        o = world.getObserver();
-        //TODO:observer call here probs (need method to call observers)
-        o.move_event(this, this.pos);
-        Scanner scanner = new Scanner(System.in);
-        ArrayList<Creature> creatures = world.getRoom(getLevel(), getY(), getX()).getCreatures();
-        if(!creatures.isEmpty()){
-            System.out.println("What action would you like to take");
-            System.out.println("1: Fight");
-            System.out.println("2: Move");
-            String action = scanner.nextLine().toLowerCase();
-            if (action.equals("1") || action.equals("fight")) {
-                for (int i = 0; i < creatures.size(); i++) {
-                    if (creatures.get(i).isAlive()) {
-                        fight(creatures.get(i));
-                    }
-                }
-            } else if (action.equals("2") || action.equals("move")) {
-                move(world);
-            }
-        } else {
-            System.out.println("What action would you like to take");
-            System.out.println("1: Move");
-            System.out.println("2: Search");
-            System.out.println("3: Celebrate");
-            String action = scanner.nextLine().toLowerCase();
-            if (action.equals("1") || action.equals("move")) {
-                move(world);
-            } else if (action.equals("2") || action.equals("search")) {
-                searchMethod.search(this, world.getRoom(getLevel(), getY(), getX()));
-            } else if (action.equals("3") || action.equals("Celebrate")) {
-                //TODO: there is an issue here. We need to be able to celebrate without fighting
-            }
-        }
+
+    public void celebrate() {
+        //TODO: Implement a way to celebrate without fighting
+        return;
     }
 
     public boolean fight(Creature creature) {
@@ -132,17 +87,19 @@ public abstract class Adventurer {
             to move to an invalid room position.
         */
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Current Position: " + getLevel() + "-" + getY() + "-" + getX());
         w.getRoom(getLevel(), getY(), getX()).remove(this); // The character needs to update the room it leaves as well as goes into so that its being tracked
         int numLevels = w.getNumLevels();
         int depth = w.getDepth();
         int width = w.getWidth();
         if (getLevel() == 0) {
-            setLevel(1);
+            System.out.println("Move From starting room to 1-1-1");
+            setLevel(getLevel() + 1);
             w.getRoom(getLevel(), getY(), getX()).addAdventurer(this);
             return;
         }
         ArrayList<Integer> possibleMoves = new ArrayList<>();
-        if (getY() - 1 > 0) {
+        if (getY() - 1 >= 0) {
             possibleMoves.add(0);
         }
         if (getY() + 1 < depth){
@@ -151,7 +108,7 @@ public abstract class Adventurer {
         if (getX() + 1 < width) {
             possibleMoves.add(2);
         }
-        if (getX() - 1 > 0) {
+        if (getX() - 1 >= 0) {
             possibleMoves.add(3);
         }
         if (getX() == width/2 && getY() == depth/2) {
@@ -201,6 +158,14 @@ public abstract class Adventurer {
         w.getRoom(getLevel(), getY(), getX()).addAdventurer(this); // Add the Adventurer to the new room it has entered
     }
 
+
+    public void setPlayerName(String name){
+        playerName = name;
+        return;
+    }
+    public String getPlayerName(){
+        return playerName;
+    }
     /*
     The way the treasure currently works is that we have an array list of all the items that a player can hold and then
     set the object to either true or false if the character has obtained it or not.

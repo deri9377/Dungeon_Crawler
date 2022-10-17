@@ -25,37 +25,37 @@ public class Runner extends Adventurer{
         setSearchMethod(new Quick());
     }
 
-    /**
-     * The Runner gets to perform 2 turns instead of just 1 like all the other Test.creatures
-     * @param world We needed to pass an instance of the Test.world in so that the character could have access to the rooms
-     *             that it moved to. In order to determine to fight or to search for treasure
-     */
-    @Override
-    public void turn(World world){
-        if (!isAlive()) {
-            return;
-        }
-        // Perform the first turn just like the other characters which involves moving first and then either fighting and looting
-        move(world);
-        world.getObserver().move_event(this, this.getPos());
-        ArrayList<Creature> creatures = world.getRoom(getLevel(), getY(), getX()).getCreatures();
-        if(!creatures.isEmpty()){
-            for (int i = 0; i < creatures.size(); i++) {
-                getFightAttribute().fight(this, creatures.get(i));
-            }
-        } else {
-            getSearchMethod().search(this,world.getRoom(getLevel(), getY(), getX()));
-        }
-        // The exact same processis then repeated so that the Runner gets moved 2 times
-        move(world);
-        creatures = world.getRoom(getLevel(), getY(), getX()).getCreatures();
-        if(!creatures.isEmpty()){
-            for (int i = 0; i < creatures.size(); i++) {
-                getFightAttribute().fight(this, creatures.get(i));
-            }
-        } else {
-            getSearchMethod().search(this, world.getRoom(getLevel(), getY(), getX()));
-        }
-    }
+//    /**
+//     * The Runner gets to perform 2 turns instead of just 1 like all the other Test.creatures
+//     * @param world We needed to pass an instance of the Test.world in so that the character could have access to the rooms
+//     *             that it moved to. In order to determine to fight or to search for treasure
+//     */
+//    @Override
+//    public void turn(World world){
+//        if (!isAlive()) {
+//            return;
+//        }
+//        // Perform the first turn just like the other characters which involves moving first and then either fighting and looting
+//        move(world);
+//        world.getObserver().move_event(this, this.getPos());
+//        ArrayList<Creature> creatures = world.getRoom(getLevel(), getY(), getX()).getCreatures();
+//        if(!creatures.isEmpty()){
+//            for (int i = 0; i < creatures.size(); i++) {
+//                getFightAttribute().fight(this, creatures.get(i));
+//            }
+//        } else {
+//            getSearchMethod().search(this,world.getRoom(getLevel(), getY(), getX()));
+//        }
+//        // The exact same processis then repeated so that the Runner gets moved 2 times
+//        move(world);
+//        creatures = world.getRoom(getLevel(), getY(), getX()).getCreatures();
+//        if(!creatures.isEmpty()){
+//            for (int i = 0; i < creatures.size(); i++) {
+//                getFightAttribute().fight(this, creatures.get(i));
+//            }
+//        } else {
+//            getSearchMethod().search(this, world.getRoom(getLevel(), getY(), getX()));
+//        }
+//    }
 
 }

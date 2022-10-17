@@ -24,6 +24,14 @@ public class Room {
         this.pos = pos;
     }
 
+    public Boolean checkAliveCreatures(){
+        for (int i = 0; i < creatures.size(); i++){
+            if (creatures.get(i).isAlive()){
+                return true;
+            }
+        }
+        return false;
+    }
     public void addAdventurer(Adventurer a) {
         adventurers.add(a);
     }
