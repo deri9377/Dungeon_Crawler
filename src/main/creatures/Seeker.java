@@ -1,6 +1,7 @@
 package main.creatures;
 
 import main.adventurers.Adventurer;
+import main.world.Logger;
 import main.world.World;
 
 import java.util.ArrayList;
@@ -56,6 +57,6 @@ public class Seeker extends Creature {
         setY(selectedMove[1]);
         setX(selectedMove[2]);
         world.getRoom(getLevel(), getY(), getX()).addCreature(this); // Add this to new Room so that the Test.world can see the update
-        world.observer.move_event(this, this.getPos());
+        Logger.getLogger().moveEvent(this, this.getPos());
     }
 }

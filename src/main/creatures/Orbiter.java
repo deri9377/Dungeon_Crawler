@@ -1,5 +1,6 @@
 package main.creatures;
 
+import main.world.Logger;
 import main.world.World;
 
 import java.util.ArrayList;
@@ -73,6 +74,6 @@ public class Orbiter extends Creature{
             setX(getX() - 1);
         }
         w.getRoom(getLevel(), getY(), getX()).addCreature(this);
-        w.observer.move_event(this, this.getPos());
+        Logger.getLogger().moveEvent(this, this.getPos());
     }
 }

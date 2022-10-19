@@ -1,12 +1,10 @@
 package main.adventurers;
 
-import main.command.Command;
 import main.creatures.Creature;
 import main.fight.FightAttribute;
 import main.fight.celebration.*;
 import main.search.SearchMethod;
 import main.world.*;
-import main.world.Observer;
 import main.world.object.*;
 import java.util.*;
 
@@ -19,6 +17,7 @@ public abstract class Adventurer {
     // encapsulated within the class and other classes did not have to worry about it and to keep the coupling loose
     private int[] pos;
     private int health;
+    private boolean leftStart = false;
     private Hashtable<String, Treasure> treasure = new Hashtable<>(); //Not sure what the different between hashmap and hashtable is
     private ArrayList<String> treasureBag = new ArrayList<>();
     private int level = 1;
@@ -29,7 +28,6 @@ public abstract class Adventurer {
     public static int CARELESS = 3;
 
     public boolean startedDancing = false;
-    public Observer o;
 
     private Die die;
 
@@ -54,12 +52,26 @@ public abstract class Adventurer {
         treasure.put("gem", new Gem());
         treasure.put("armor", new Armor());
         treasure.put("potion", new Potion());
+        treasure.put("portal", new Portal());
+        treasure.put("trap", new Portal());
     }
 
 
     public void celebrate() {
         //TODO: Implement a way to celebrate without fighting
-        return;
+        int celebrationChoice = 0;
+        Random random = new Random();
+        ArrayList<Celebrate> c = new ArrayList<>();
+        c.add(new Dance(fightAttribute));
+        c.add(new Spin(fightAttribute));
+        c.add(new Shout(fightAttribute));
+        c.add(new Jump(fightAttribute));
+        c.add(new Griddy(fightAttribute));
+        System.out.print(getPlayerName() + " celebrated! : ");
+        for (int i = 0; i < 5; i++){
+            c.get(i).celebrate();
+            Logger.getLogger().notifyCelebration(getPlayerName(), c.get(i).getName());
+        }
     }
 
     public boolean fight(Creature creature) {
@@ -94,6 +106,7 @@ public abstract class Adventurer {
         int width = w.getWidth();
         if (getLevel() == 0) {
             System.out.println("Move From starting room to 1-1-1");
+            setLeftStart(true);
             setLevel(getLevel() + 1);
             w.getRoom(getLevel(), getY(), getX()).addAdventurer(this);
             return;
@@ -118,6 +131,9 @@ public abstract class Adventurer {
             if (getLevel() > 1) {
                 possibleMoves.add(5);
             }
+        }
+        if (getX() == 1 && getY() == 1 && getLevel() == 1) {
+            possibleMoves.add(5);
         }
         // int moveDir = possibleMoves.get(new Random().nextInt(possibleMoves.size())); //choose a random move out of the possible rooms the Adventurer can move to
         System.out.println("Possible moves are: ");
@@ -156,6 +172,7 @@ public abstract class Adventurer {
             setLevel(getLevel() - 1);
         }
         w.getRoom(getLevel(), getY(), getX()).addAdventurer(this); // Add the Adventurer to the new room it has entered
+        Logger.getLogger().moveEvent(this, pos);
     }
 
 
@@ -172,14 +189,19 @@ public abstract class Adventurer {
      */
     public void addTreasure(Treasure t) {
 //        System.out.println("TREASURE WOOOOO"); didnt work :(
-        setHealth(t.healthBonus());
+        if (getTreasure().get(t.getName()).isObtained()) {
+            return;
+        }
+        setHealth(getHealth() + t.healthBonus());
+        getTreasure().get(t.getName()).setObtained(true);
         if(t.getName().equals("portal")){
             Random rand = new Random();
             int[] newPos = new int[]{rand.nextInt(1,4), rand.nextInt(1,4), rand.nextInt(1,4)};
             pos = newPos;
+
+
         }
         if (!(t.getName().equals("trap") || t.getName().equals("portal"))) {
-            treasure.get(t.getName()).setObtained(true);
             treasureBag.add(t.getName());
         }
     }
@@ -187,6 +209,10 @@ public abstract class Adventurer {
     // Everything below is basic getters and setters for the Adventurer class
     public boolean isAlive() {
         return health > 0;
+    }
+
+    public void setPos(int p[]){
+        pos = p;
     }
 
     public int getLevel() {
@@ -220,6 +246,10 @@ public abstract class Adventurer {
     public void setHealth(int health) {
 
         this.health = health;
+        Logger.getLogger().notifyHealthChange(this, health);
+        if(health < 1){
+            Logger.getLogger().defeated(playerName);
+        }
     }
 
     public Hashtable<String, Treasure> getTreasure(){
@@ -257,4 +287,11 @@ public abstract class Adventurer {
         this.searchMethod = searchMethod;
     }
     public SearchMethod getSearchMethod() {return searchMethod;}
+
+    public void setLeftStart(boolean b) {
+        leftStart = b;
+    }
+    public boolean getLeftStart() {
+        return leftStart;
+    }
 }

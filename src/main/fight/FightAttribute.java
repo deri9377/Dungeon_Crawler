@@ -4,6 +4,7 @@ package main.fight;
 import main.adventurers.Adventurer;
 import main.creatures.Creature;
 import main.world.Die;
+import main.world.Logger;
 import main.world.object.Treasure;
 
 import java.util.HashMap;
@@ -37,14 +38,13 @@ public abstract class FightAttribute {
         if(creatureRoll > advRoll){
 //            Damage Taken
             adventurer.setHealth(adventurer.getHealth() - 1);
-            // adventurer.o.notifyCombat(adventurer, creature, false);
-            // adventurer.o.notifyHealthChange(adventurer, adventurer.getHealth());
+            Logger.getLogger().combat(adventurer.getPlayerName(), creature.getName(), false);
         }
         if(creatureRoll < advRoll){
 //            Victory Against Creature
             creature.setAlive(false);
             creatureDied = true;
-            // adventurer.o.notifyCombat(adventurer, creature, true);
+            Logger.getLogger().combat(adventurer.getPlayerName(), creature.getName(), true);
         }
         return creatureDied;
     }

@@ -2,20 +2,21 @@ package main.command;
 
 import main.adventurers.Adventurer;
 import main.world.Room;
+import main.world.World;
 
 public class SearchCommand implements Command{
 
     private Adventurer adventurer;
-    private Room room;
+    private World world;
 
-    public SearchCommand(Adventurer a, Room r) {
+    public SearchCommand(Adventurer a, World w) {
         adventurer = a;
-        room = r;
+        world = w;
     }
 
     @Override
     public void execute() {
-        this.adventurer.getSearchMethod().search(adventurer, room);
+        this.adventurer.getSearchMethod().search(adventurer, world);
     }
 
 }

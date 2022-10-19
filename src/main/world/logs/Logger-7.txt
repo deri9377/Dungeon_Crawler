@@ -1,0 +1,8 @@
+[Adventurer]tanner moved into room: 3-0-2
+[Creature]Orbiter moved into room: 4-2-0
+[Creature]Blinker moved into room: 2-2-1
+[Creature]Orbiter moved into room: 1-2-2
+[Creature]Blinker moved into room: 4-2-1
+[Creature]Orbiter moved into room: 1-2-1
+[Creature]Blinker moved into room: 4-1-2
+[Creature]Orbiter moved into room: 3-2-0

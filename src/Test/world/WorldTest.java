@@ -1,14 +1,13 @@
 package Test.world;
 
-import main.adventurers.Brawler;
-import main.adventurers.Runner;
-import main.adventurers.Sneaker;
-import main.adventurers.Thief;
+import main.adventurers.*;
 import main.creatures.Blinker;
+import main.creatures.Creature;
 import main.creatures.Orbiter;
 import main.creatures.Seeker;
 import main.world.object.*;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
@@ -16,6 +15,7 @@ import main.world.Room;
 import main.world.World;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -26,10 +26,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class WorldTest {
 
     public static World w;
-    @BeforeAll
-    static void initAll() {
+    @BeforeEach
+    void initAll() {
         w = new World();
-        w.createAdventurers();
         w.generateCreatures();
         w.generateTreasure();
     }
@@ -42,10 +41,9 @@ public class WorldTest {
 
     @Test
     public void adventurerCorrectPosition() {
+        Adventurer a = new Brawler(0, 1, 1);
         int[] correct_pos = new int[]{0, 1, 1};
-        for (int i = 0; i < w.getAdventurers().size(); i++) {
-            assertArrayEquals(w.getAdventurers().get(i).getPos(), correct_pos);
-        }
+        assertArrayEquals(a.getPos(), correct_pos);
     }
 
     /**
@@ -53,13 +51,12 @@ public class WorldTest {
      */
     @Test
     public void adventurerCorrectNumber() {
-        int numAdventurers = 4;
-        assertAll("Testing if all 4 Adventurers are instantiated in the start position",
+        Adventurer a = new Brawler(0, 1, 1);
+        w.addAdventurer(a);
+        int numAdventurers = 1;
+        assertAll("Testing if all the Adventurers is instantiated in the start position",
                 () -> assertEquals(w.getAdventurers().size(), numAdventurers),
-                () -> assertEquals(w.getAdventurers().stream().filter(a -> a instanceof Brawler).count(), 1),
-                () -> assertEquals(w.getAdventurers().stream().filter(a -> a instanceof Runner).count(), 1),
-                () -> assertEquals(w.getAdventurers().stream().filter(a -> a instanceof Sneaker).count(), 1),
-                () -> assertEquals(w.getAdventurers().stream().filter(a -> a instanceof Thief).count(), 1));
+                () -> assertEquals(a instanceof Adventurer, true));
     }
 
     /**
@@ -94,5 +91,95 @@ public class WorldTest {
                 () -> assertEquals(treasures.stream().filter(a -> a instanceof Portal).count(), numTreasures),
                 () -> assertEquals(treasures.stream().filter(a -> a instanceof Trap).count(), numTreasures));
     }
+
+    @Test
+    public void endGameAllMonstersKilled() {
+        for (int i = 0; i < w.getCreatures().size(); i++) {
+            w.getCreatures().get(i).setAlive(false);
+        }
+        assertFalse(w.isCreaturesAlive());
+    }
+
+    @Test
+    public void endGameAllTreasureFound() {
+        Adventurer a = new Brawler(0, 1, 1);
+        for (Map.Entry<String, Treasure> set:  a.getTreasure().entrySet()) {
+            set.getValue().setObtained(true);
+        }
+        assertTrue(w.isTreasureObtained(a));
+    }
+
+    @Test
+    public void endGamePosition() {
+        Adventurer a = new Brawler(0, 1, 1);
+        a.setLeftStart(true);
+        w.addAdventurer(a);
+        assertTrue(w.gameOver());
+    }
+
+    @Test
+    public void endGameDeath() {
+        Adventurer a = new Brawler(0, 1, 1);
+        a.setHealth(0);
+        w.addAdventurer(a);
+        assertTrue(w.gameOver());
+    }
+
+    @Test
+    public void portalSuccess() {
+        Adventurer a = new Brawler(0, 1, 1);
+        int[] pos = a.getPos();
+        a.addTreasure(new Portal());
+        assertNotEquals(pos, a.getPos());
+    }
+
+    @Test
+    public void potionSuccess() {
+        Adventurer a = new Brawler(0, 1, 1);
+        int health = a.getHealth();
+        a.addTreasure(new Potion());
+        assertNotEquals(health, a.getHealth());
+    }
+
+    @Test
+    public void trapSuccess() {
+        Adventurer a = new Brawler(0, 1, 1);
+        int health = a.getHealth();
+        a.addTreasure(new Trap());
+        assertNotEquals(health, a.getHealth());
+    }
+
+    @Test
+    public void combatSuccess() {
+        Adventurer a = new Brawler(0, 1, 1);
+        Creature c = new Blinker(0, 1, 1);
+        int aHealth = a.getHealth();
+        a.fight(c);
+        assertTrue(aHealth != a.getHealth() || !c.isAlive());
+    }
+
+    @Test
+    public void creatureDoesntMoveWithAdventurer() {
+        Adventurer a = new Brawler(1, 1, 1);
+        Creature c = new Blinker(1, 1, 1);
+        w.addAdventurer(a);
+        w.addCreature(c);
+        int[] pos = c.getPos();
+        c.turn(w);
+        assertTrue(c.getPos() == pos);
+    }
+
+    @Test
+    public void cantPickUpDuplicateItems() {
+        Adventurer a = new Brawler(0, 1, 1);
+        a.addTreasure(new Potion());
+        int health = a.getHealth();
+        a.addTreasure(new Potion());
+        assertTrue(health == a.getHealth());
+    }
+
+
+
+
 
 }

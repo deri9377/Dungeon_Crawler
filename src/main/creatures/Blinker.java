@@ -1,5 +1,6 @@
 package main.creatures;
 
+import main.world.Logger;
 import main.world.World;
 
 import java.util.ArrayList;
@@ -32,6 +33,7 @@ public class Blinker extends Creature{
     public void move(World w) {
         w.getRoom(getLevel(), getY(), getX()).remove(this); // Remove from room so the blinkers dont duplicate on move
         Random rand = new Random();
+        System.out.println(getNumLevels());
         // need to add 1 to the random level so that level 0 is never chosen
         int tempLevel = rand.nextInt(getNumLevels()) + 1;
         // choose any random level within the width, depth bounds
@@ -42,6 +44,6 @@ public class Blinker extends Creature{
         setY(tempY);
         setX(tempX);
         w.getRoom(getLevel(), getY(), getX()).addCreature(this);
-        w.observer.move_event(this, this.getPos());
+        Logger.getLogger().moveEvent(this, this.getPos());
     }
 }

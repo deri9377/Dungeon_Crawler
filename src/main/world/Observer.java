@@ -13,7 +13,8 @@ import main.world.Tracker;
 import main.world.object.Treasure;
 
 /**
- * This class obsereves the world
+ * This class obsereves the world and publishes events to the Loggers and Tracker so that they do not need to query info
+ * from the world itself. It also handles instantiation of the loggers and tracker.
  */
 public class Observer {
     /*
@@ -39,6 +40,7 @@ public class Observer {
         this.loggers.add(logger);
         return logger;
     }
+    //    Notify subscriber (tracker)
     public void updateTracker(World w){
         ArrayList<Adventurer> a = w.getAdventurers();
         ArrayList<String> aNames = new ArrayList<>();
@@ -91,7 +93,9 @@ public class Observer {
     public void deleteLogger(Logger l){
         loggers.remove(l);
     }
-    public void notify_subs(int eventNumber) {
+    //Below are the functions used to notify subscribers of various changes that occur during the progress of the game, as
+    // they are being published here.
+    public void notifySubs(int eventNumber) {
         if(eventNumber == 0){
             for (int i = 0; i < loggers.size(); i++){
                 loggers.get(i).movement(advMove.get(advMove.size()-1), advPos.get(advPos.size()-1));
@@ -105,19 +109,19 @@ public class Observer {
             }
         }
     }
-    public void move_event(Adventurer a,int[] p) {
+    public void moveEvent(Adventurer a,int[] p) {
         advMove.add(a);
         advPos.add(p);
-        notify_subs(0);
+        notifySubs(0);
     }
-    public void move_event(Creature c,int[] p) {
+    public void moveEvent(Creature c,int[] p) {
         creMove.add(c);
         crePos.add(p);
-        notify_subs(6);
+        notifySubs(6);
     }
     public void notifyCelebration(Adventurer a) {
         celebrations.add(a);
-        notify_subs(2);
+        notifySubs(2);
     }
     public void notifyCombat(Adventurer a, Creature c, boolean advWon){
         for (int i = 0; i < loggers.size(); i++) {

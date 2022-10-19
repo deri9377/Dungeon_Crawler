@@ -13,6 +13,7 @@ public class Thief extends Adventurer {
      */
     public Thief(){
         super();
+        build();
     }
 
     /**
@@ -23,6 +24,7 @@ public class Thief extends Adventurer {
      */
     public Thief(int level, int y, int x) {
         super(level, y, x);
+        build();
     }
 
     private void build() {

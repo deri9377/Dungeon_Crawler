@@ -5,18 +5,11 @@ import main.command.CelebrateCommand;
 import main.command.FightCommand;
 import main.command.MoveCommand;
 import main.command.SearchCommand;
-import main.creatures.Blinker;
 import main.creatures.Creature;
-import main.creatures.Orbiter;
-import main.creatures.Seeker;
+import main.world.factories.CharacterFactory;
 import main.world.object.*;
-import main.world.Observer;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class World {
 
@@ -34,18 +27,17 @@ public class World {
     private ArrayList<Room> rooms;
     public static final int TREASURE_THRESHOLD = 10; //treasure search
     public static final int MAX_TREASURE = 10;          //Win condition: all characters collect 10 treasure as a sum
-    private final int MAX_TURNS = 100;
+    private final int MAX_TURNS = 50;
     private int numLevels;
     private int width;
     private int depth;
     private int turn;
+    private CharacterFactory factory = new CharacterFactory();
 
     private ArrayList<Adventurer> adventurers = new ArrayList<>();
     private ArrayList<Creature> creatures = new ArrayList<>();
 
     private Printer printer = new Printer();
-
-    public Observer observer;
 
     public World() {
         numLevels = 4;
@@ -53,7 +45,6 @@ public class World {
         depth = 3;
         rooms = new ArrayList<>();
         generateWorld();
-        observer = new Observer();
     }
 
     public World(int numLevels, int width, int depth) {
@@ -62,11 +53,6 @@ public class World {
         this.depth = depth;
         rooms = new ArrayList<>();
         generateWorld();
-        observer = new Observer();
-    }
-
-    public Observer getObserver() {
-        return observer;
     }
 
     /**
@@ -88,32 +74,73 @@ public class World {
     }
     public void runGame() {
         setTurn(0);
-        while (true) {
-            Logger logger = observer.createLogger(getTurn());
-            // Start of turn checking win/lose conditions
-            boolean aAlive = true;
-            for (int i = 0; i < rooms.size(); i++) {
-                ArrayList<Adventurer> a = getAdventurers();
-                for (int j = 0; j < a.size(); j++) {
-                    if (!a.get(j).isAlive()) {
-                        aAlive = false;
-                    }
-                }
-            }
-            if (!aAlive) {
-                printer.printer(this);
-                System.out.println("You Died. Game Over!");
-                return;
-            }
-
-            //Every normal turn
+        while (!gameOver() && turn <= MAX_TURNS) {
+            Logger logger = Logger.getLogger(turn);
             printer.printer(this);
-            runTurns(); //Performs all turn operations
-            // observer.deleteLogger(logger);
-            // observer.updateTracker(this);
+            for (int i = 0; i < adventurers.size(); i++) {
+                if (adventurers.get(i).getName().equals("Runner")) {
+                    runAdventurerTurn(adventurers.get(i));
+                }
+                runAdventurerTurn(adventurers.get(i));
+            }
+            runCreatureTurns(); //Performs all turn operations
+            Logger.deleteLogger();
+            Tracker.getInstance().update(this);
             setTurn(getTurn() + 1);
-
         }
+        boolean creaturesAlive = isCreaturesAlive();
+        boolean treasureObtained = isTreasureObtained(adventurers.get(0));
+        if (treasureObtained || !creaturesAlive) {
+            System.out.println("Congratulations You Win!");
+            if (treasureObtained) {
+                System.out.println("You collected all the treasure");
+            }
+            if (!creaturesAlive) {
+                System.out.println("You killed all the enemies");
+            }
+        } else {
+            System.out.println("Game Over. You Lose!");
+        }
+
+    }
+
+    public boolean gameOver() {
+        boolean aAlive = true;
+        for (int i = 0; i < adventurers.size(); i++) {
+            if (!adventurers.get(i).isAlive()) {
+                aAlive = false;
+            }
+            if (adventurers.get(i).getLeftStart() && adventurers.get(i).getLevel() == 0) {
+                System.out.println("You returned to spawn.");
+                return true;
+            }
+        }
+        if (!aAlive) {
+            printer.printer(this);
+            System.out.println("You Died. Game Over!");
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isCreaturesAlive() {
+        boolean creaturesAlive = false;
+        for (int i = 0; i < creatures.size(); i++) {
+            if (creatures.get(i).isAlive()) {
+                creaturesAlive = true;
+            }
+        }
+        return creaturesAlive;
+    }
+
+    public boolean isTreasureObtained(Adventurer a) {
+        boolean treasureObtained = true;
+        for (Map.Entry<String, Treasure> set:  a.getTreasure().entrySet()) {
+            if (!set.getValue().isObtained()) {
+                treasureObtained = false;
+            }
+        }
+        return treasureObtained;
     }
     public void setAdventurers(ArrayList<Adventurer> a){
         adventurers = a;
@@ -134,56 +161,58 @@ public class World {
      * This function acts as the main method for the Test.adventurers this keeps our code properly segmented and easy to read
      * This function performs a move and then the appropriate action phase
      */
-    public void runTurns(){
-            for (int i = 0; i < adventurers.size(); i++) {
-                Adventurer a = adventurers.get(i);
-                if (!a.isAlive()) {
-                    return;
-                }
-                Scanner scanner = new Scanner(System.in);
-                Room room = getRoom(a.getLevel(), a.getY(), a.getX());
-                if(room.checkAliveCreatures()){
-                    System.out.println("What action would you like to take");
-                    System.out.println("1: Fight");
-                    System.out.println("2: Move");
-                    String action = scanner.nextLine().toLowerCase();
-                    if (action.equals("1") || action.equals("fight")) {
-                        ArrayList<Creature> creatures = room.getCreatures();
-                        for (int j = 0; j < creatures.size(); j++) {
-                            if (creatures.get(j).isAlive()) {
-                                FightCommand fc = new FightCommand(a, creatures.get(j));
-                                fc.execute();
-                            }
-                        }
-                    } else if (action.equals("2") || action.equals("move")) {
-                        MoveCommand mc = new MoveCommand(a, this);
-                        mc.execute();
-                    }
-                } else {
-                    System.out.println("What action would you like to take");
-                    System.out.println("1: Move");
-                    System.out.println("2: Search");
-                    System.out.println("3: Celebrate");
-                    String action = scanner.nextLine().toLowerCase();
-                    if (action.equals("1") || action.equals("move")) {
-                        MoveCommand mc = new MoveCommand(a, this);
-                        mc.execute();
-                    } else if (action.equals("2") || action.equals("search")) {
-                        SearchCommand sc = new SearchCommand(a, room);
-                        sc.execute();
-                    } else if (action.equals("3") || action.equals("Celebrate")) {
-                        //TODO: there is an issue here. We need to be able to celebrate without fighting
-                        CelebrateCommand cc = new CelebrateCommand(a);
-                        cc.execute();
+    public void runAdventurerTurn(Adventurer a){
+        if (!a.isAlive()) {
+            return;
+        }
+        Scanner scanner = new Scanner(System.in);
+        Room room = getRoom(a.getLevel(), a.getY(), a.getX());
+        if (room.checkAliveCreatures()) {
+            System.out.println("What action would you like to take");
+            System.out.println("1: Fight");
+            System.out.println("2: Move");
+            String action = scanner.nextLine().toLowerCase();
+            if (action.equals("1") || action.equals("fight")) {
+                ArrayList<Creature> creatures = room.getCreatures();
+                for (int j = 0; j < creatures.size(); j++) {
+                    if (creatures.get(j).isAlive()) {
+                        FightCommand fc = new FightCommand(a, creatures.get(j));
+                        fc.execute();
                     }
                 }
+            } else if (action.equals("2") || action.equals("move")) {
+                MoveCommand mc = new MoveCommand(a, this);
+                a.setHealth(a.getHealth() - 1);
+                mc.execute();
             }
-            for (int i = 0; i < creatures.size(); i++) {
-                if(creatures.get(i).isAlive()) {
-                    creatures.get(i).turn(this);
-                }
+        } else {
+            System.out.println("What action would you like to take");
+            System.out.println("1: Move");
+            System.out.println("2: Search");
+            System.out.println("3: Celebrate");
+            String action = scanner.nextLine().toLowerCase();
+            if (action.equals("1") || action.equals("move")) {
+                MoveCommand mc = new MoveCommand(a, this);
+                mc.execute();
+            } else if (action.equals("2") || action.equals("search")) {
+                SearchCommand sc = new SearchCommand(a, this);
+                sc.execute();
+            } else if (action.equals("3") || action.equals("Celebrate")) {
+                //TODO: there is an issue here. We need to be able to celebrate without fighting
+                CelebrateCommand cc = new CelebrateCommand(a);
+                cc.execute();
             }
         }
+    }
+
+    private void runCreatureTurns() {
+        for (int i = 0; i < creatures.size(); i++) {
+            if(creatures.get(i).isAlive()) {
+                creatures.get(i).turn(this);
+            }
+        }
+    }
+
 
     /**
      * Generates the Test.world and populates it with rooms
@@ -220,6 +249,7 @@ public class World {
                 room.addCreature(c);
             }
         }
+        creatures.add(c);
     }
 
     public void addTreasure(Treasure t) {
@@ -237,46 +267,17 @@ public class World {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a character name.");
         String name = scanner.nextLine();
-        System.out.println("Please enter a valid class: brawler, runner, sneaker or theif");
+        System.out.println("Please enter a valid class: brawler, runner, sneaker or thief");
         String adventurerType = scanner.nextLine();
         adventurerType = adventurerType.toLowerCase();
         while (!(adventurerType.equals("brawler") || adventurerType.equals("runner") || adventurerType.equals("sneaker")
-                || adventurerType.equals("theif"))) {
-            System.out.println("Please enter a valid class: brawler, runner, sneaker or theif");
+                || adventurerType.equals("thief"))) {
+            System.out.println("Please enter a valid class: brawler, runner, sneaker or thief");
             adventurerType = scanner.nextLine();
             adventurerType = adventurerType.toLowerCase();
         }
         adventurerType = adventurerType.toLowerCase();
-        if  (adventurerType.equals("brawler")) {
-            Brawler brawler = new Brawler(0, 1, 1);
-            addAdventurer(brawler);
-        } else if (adventurerType.equals("runner")) {
-            Runner runner = new Runner(0, 1, 1);
-            addAdventurer(runner);
-        } else if (adventurerType.equals("sneaker")) {
-            Sneaker sneaker = new Sneaker(0, 1, 1);
-            addAdventurer(sneaker);
-        } else if (adventurerType.equals("theif")) {
-            Thief theif = new Thief(0, 1, 1);
-            addAdventurer(theif);
-        }
-    }
-
-    public void generateCreatures() {
-        ArrayList<Creature> creat = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
-            Blinker b = new Blinker(getNumLevels(), getWidth(), getDepth());
-            Seeker s = new Seeker(getNumLevels(), getWidth(), getDepth());
-            Orbiter o = new Orbiter(getNumLevels(), getWidth(), getDepth());
-            addCreature(b);
-            addCreature(s);
-            addCreature(o);
-            creat.add(b);
-            creat.add(s);
-            creat.add(o);
-        }
-        setCreatures(creat);
-        printer.setCreature(creat);
+        factory.createAdventurer(this, adventurerType, name);
     }
 
     public void generateTreasure() {
@@ -318,6 +319,14 @@ public class World {
         }
         return new Room(new int[]{level, y, x});
     }
+
+    public void generateCreatures() {
+        for (int i = 0; i < 4; i++) {
+            factory.createCreature(this, "blinker");
+            factory.createCreature(this, "orbiter");
+            factory.createCreature(this, "seeker");
+        }
+    }
     public int[] randomPosition() {
         Random rand = new Random();
         int level = rand.nextInt(getNumLevels()) + 1;
@@ -335,6 +344,7 @@ public class World {
 
     public static void main(String[] args) {
         World w = new World();
+        Logger logger = Logger.getLogger(0);
         w.createAdventurers();
         w.generateCreatures();
         w.generateTreasure();

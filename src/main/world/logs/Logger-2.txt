@@ -1,17 +1,10 @@
-[Creature]Blinker moved into room: 4-2-1
-[Creature]Orbiter moved into room: 1-0-2
-[Creature]Blinker moved into room: 2-1-0
-[Creature]Orbiter moved into room: 1-2-2
+bilbo's health changed to:12
+bilbo discovered a sword treasure while searching. 
 [Creature]Blinker moved into room: 2-0-0
-[Creature]Seeker moved into room: 1-2-1
-[Creature]Orbiter moved into room: 2-2-2
-[Creature]Blinker moved into room: 4-0-2
-[Creature]Orbiter moved into room: 1-1-2
-[Creature]Blinker moved into room: 2-0-2
-[Creature]Orbiter moved into room: 1-0-1
-[Creature]Blinker moved into room: 3-2-0
-[Creature]Orbiter moved into room: 1-1-2
-[Creature]Blinker moved into room: 3-1-1
 [Creature]Orbiter moved into room: 2-1-2
-[Creature]Blinker moved into room: 2-1-0
-[Creature]Orbiter moved into room: 1-2-2
+[Creature]Blinker moved into room: 1-0-2
+[Creature]Orbiter moved into room: 3-2-1
+[Creature]Blinker moved into room: 3-0-0
+[Creature]Orbiter moved into room: 3-2-2
+[Creature]Blinker moved into room: 1-2-2
+[Creature]Orbiter moved into room: 1-2-0

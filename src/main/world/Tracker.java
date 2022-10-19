@@ -1,12 +1,19 @@
 package main.world;
 
 import main.adventurers.Adventurer;
+import main.creatures.Creature;
+import main.world.object.Treasure;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Hashtable;
 
-public class Tracker {
+public final class Tracker {
+
+    // Reference for eager and lazy: https://betterprogramming.pub/what-is-a-singleton-2dc38ca08e92
+
+    private static Tracker instance = new Tracker(); //Eager instatiation
     public void setTurn(int turn) {
         this.turn = turn;
     }
@@ -53,6 +60,57 @@ public class Tracker {
 
     }
 
+    public static Tracker getInstance() {
+        return instance;
+    }
+
+    public void update(World w){
+        ArrayList<Adventurer> a = w.getAdventurers();
+        ArrayList<String> aNames = new ArrayList<>();
+        ArrayList<Integer> hp = new ArrayList<>();
+        ArrayList<int[]> aPos = new ArrayList<>();
+
+        ArrayList<ArrayList<String>> treasures = new ArrayList<>();
+
+        ArrayList<Creature> c = w.getCreatures();
+        ArrayList<String> cNames = new ArrayList<>();
+        ArrayList<int[]> cPos = new ArrayList<>();
+
+        for(int i = 0; i < a.size(); i++){
+            if(a.get(i).getHealth() > 0) {
+                aNames.add(a.get(i).getName());
+                hp.add(a.get(i).getHealth());
+                aPos.add(a.get(i).getPos());
+                Hashtable<String, Treasure> tempTreasure = a.get(i).getTreasure();
+                ArrayList<String> advTreasure = new ArrayList<>();
+                for (String key : tempTreasure.keySet()) {
+                    if (tempTreasure.get(key).isObtained()) {
+                        advTreasure.add(key);
+                    }
+                }
+                if(advTreasure.size() < 1) {
+                    advTreasure.add("");
+                }
+                treasures.add(advTreasure);
+            }
+        }
+        for(int i = 0; i < c.size(); i++){
+            if(c.get(i).isAlive()) {
+                cNames.add(c.get(i).getName());
+                cPos.add(c.get(i).getPos());
+            }
+
+        }
+        setTurn(w.getTurn());
+        setAdventurers(aNames);
+        setAdventurerHealths(hp);
+        setAdventurerPositions(aPos);
+        setTreasures(treasures);
+        setCreatures(cNames);
+        setCreaturePositions(cPos);
+        log();
+    }
+
     /**
      * Logs out all of the important tracker update data
      * prints all the adventurers first followed by the creatures
@@ -77,20 +135,5 @@ public class Tracker {
             int z = creaturePositions.get(i)[2];
             System.out.printf("%-"+ SPACING + "s%-" + SPACING + "s\n" , creatures.get(i) , x + "-" + y + "-" + z);
         }
-//        for (int i = 0; i < treasures.size(); i++) {
-//            try {
-//                FileWriter fr = new FileWriter(this.file, true);
-//                fr.write("Logger: Turn " + turn);
-//                fr.write(name + " " + pos[0] + " " + pos[1] + " " + pos[2] + " " + health + " ");
-//                if (i != treasures.size() - 1) {
-//                    fr.write(" " + treasures.get(i) + ", ");
-//                } else {
-//                    fr.write(treasures.get(i));
-//                }
-//                fr.close();
-//            } catch (IOException e) {
-//                System.out.println("Could not log adveturer statistics");
-//            }
-//        }
     }
 }
