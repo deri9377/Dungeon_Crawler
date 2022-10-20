@@ -92,6 +92,9 @@ public class WorldTest {
                 () -> assertEquals(treasures.stream().filter(a -> a instanceof Trap).count(), numTreasures));
     }
 
+    /**
+        Checks to see if the game ends when all monsters are killed
+     **/
     @Test
     public void endGameAllMonstersKilled() {
         for (int i = 0; i < w.getCreatures().size(); i++) {
@@ -100,6 +103,9 @@ public class WorldTest {
         assertFalse(w.isCreaturesAlive());
     }
 
+    /**
+        Chesks to see if game ends when all teasure is found
+     **/
     @Test
     public void endGameAllTreasureFound() {
         Adventurer a = new Brawler(0, 1, 1);
@@ -109,6 +115,9 @@ public class WorldTest {
         assertTrue(w.isTreasureObtained(a));
     }
 
+    /**
+     Checks to see if the game ends when character returns to 0,1,1
+     **/
     @Test
     public void endGamePosition() {
         Adventurer a = new Brawler(0, 1, 1);
@@ -117,6 +126,9 @@ public class WorldTest {
         assertTrue(w.gameOver());
     }
 
+    /**
+     Checks to see if the game ends when adventurer has 0 health
+     **/
     @Test
     public void endGameDeath() {
         Adventurer a = new Brawler(0, 1, 1);
@@ -125,6 +137,9 @@ public class WorldTest {
         assertTrue(w.gameOver());
     }
 
+    /**
+     Checks to see if the portal correctly teleports user
+     **/
     @Test
     public void portalSuccess() {
         Adventurer a = new Brawler(0, 1, 1);
@@ -133,6 +148,9 @@ public class WorldTest {
         assertNotEquals(pos, a.getPos());
     }
 
+    /**
+     Checks to see if the potion adds health appropriately
+     **/
     @Test
     public void potionSuccess() {
         Adventurer a = new Brawler(0, 1, 1);
@@ -141,6 +159,9 @@ public class WorldTest {
         assertNotEquals(health, a.getHealth());
     }
 
+    /**
+     Checks to see if the trap takes away health appropriately
+     **/
     @Test
     public void trapSuccess() {
         Adventurer a = new Brawler(0, 1, 1);
@@ -149,6 +170,9 @@ public class WorldTest {
         assertNotEquals(health, a.getHealth());
     }
 
+    /**
+     Checks to see if combat interaction is correctly executed
+     **/
     @Test
     public void combatSuccess() {
         Adventurer a = new Brawler(0, 1, 1);
@@ -158,6 +182,9 @@ public class WorldTest {
         assertTrue(aHealth != a.getHealth() || !c.isAlive());
     }
 
+    /**
+     Checks to see if the creature moves if an adventurer is in the room
+     **/
     @Test
     public void creatureDoesntMoveWithAdventurer() {
         Adventurer a = new Brawler(1, 1, 1);
@@ -169,6 +196,9 @@ public class WorldTest {
         assertTrue(c.getPos() == pos);
     }
 
+    /**
+     Checks to see if you can pick up 2 of the same item
+     **/
     @Test
     public void cantPickUpDuplicateItems() {
         Adventurer a = new Brawler(0, 1, 1);

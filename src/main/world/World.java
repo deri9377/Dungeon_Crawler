@@ -56,22 +56,9 @@ public class World {
     }
 
     /**
-     * runGame() will begin the simulation and run turns over and over continuously until a termination condition (win/lose)
-     * is met. It utilizes methods from instances of Test.creatures, Test.adventurers, room,  and the printer class to achieve this.
-     * At the end of each turn iteration, this function calls runTurns to perform each characters moves as well as the printer.
+     * This function is the main game engine. It checks to see if any endgame conditions have occured otherwise
+     * it runs the adventurer and creature turns
      */
-    private int countTreasure(ArrayList<Adventurer> a){
-        int t = 0;
-        for(int i = 0; i < a.size(); i++) {
-            Hashtable<String, Treasure> tempTreasure = a.get(i).getTreasure();
-            for (String key : tempTreasure.keySet()) {
-                if (tempTreasure.get(key).isObtained()) {
-                    t += 1;
-                }
-            }
-        }
-        return t;
-    }
     public void runGame() {
         setTurn(0);
         while (!gameOver() && turn <= MAX_TURNS) {
@@ -104,6 +91,10 @@ public class World {
 
     }
 
+    /**
+     *
+     * @return if the game is over return true
+     */
     public boolean gameOver() {
         boolean aAlive = true;
         for (int i = 0; i < adventurers.size(); i++) {
@@ -123,6 +114,10 @@ public class World {
         return false;
     }
 
+    /**
+     * Returns is any of the creatures are still alive
+     * @return if any ceature is alive
+     */
     public boolean isCreaturesAlive() {
         boolean creaturesAlive = false;
         for (int i = 0; i < creatures.size(); i++) {
@@ -133,6 +128,11 @@ public class World {
         return creaturesAlive;
     }
 
+    /**
+     * Returns is the a has found all of the treasure
+     * @param a: the adventurer
+     * @return if the adventurer has obtained all treasure
+     */
     public boolean isTreasureObtained(Adventurer a) {
         boolean treasureObtained = true;
         for (Map.Entry<String, Treasure> set:  a.getTreasure().entrySet()) {
@@ -168,6 +168,7 @@ public class World {
         Scanner scanner = new Scanner(System.in);
         Room room = getRoom(a.getLevel(), a.getY(), a.getX());
         if (room.checkAliveCreatures()) {
+            //Takes in a string so the user can input the number or the string
             System.out.println("What action would you like to take");
             System.out.println("1: Fight");
             System.out.println("2: Move");
@@ -182,10 +183,11 @@ public class World {
                 }
             } else if (action.equals("2") || action.equals("move")) {
                 MoveCommand mc = new MoveCommand(a, this);
-                a.setHealth(a.getHealth() - 1);
+                a.setHealth(a.getHealth() - 1);                 //if the a tries to move while a creature is there
                 mc.execute();
             }
         } else {
+            // Needs to take in a string so that you can analyze if it is the number or string inputted
             System.out.println("What action would you like to take");
             System.out.println("1: Move");
             System.out.println("2: Search");

@@ -45,6 +45,9 @@ public abstract class Adventurer {
         init();
     }
 
+    /**
+     * The initialization of the inventory
+     */
     public void init() {
         health = 3;
         die = new Die();
@@ -56,7 +59,9 @@ public abstract class Adventurer {
         treasure.put("trap", new Portal());
     }
 
-
+    /**
+     * If the adventurer decides to celebrate do the celebrations
+     */
     public void celebrate() {
         //TODO: Implement a way to celebrate without fighting
         int celebrationChoice = 0;
@@ -74,6 +79,11 @@ public abstract class Adventurer {
         }
     }
 
+    /**
+     * Fights the creatue that is passed in
+     * @param creature: the creature that the adventurer is fighting
+     * @return if the creature died
+     */
     public boolean fight(Creature creature) {
         FightAttribute temp = getFightAttribute();
         fightAttribute = new Dance(fightAttribute);
@@ -174,7 +184,6 @@ public abstract class Adventurer {
         w.getRoom(getLevel(), getY(), getX()).addAdventurer(this); // Add the Adventurer to the new room it has entered
         Logger.getLogger().moveEvent(this, pos);
     }
-
 
     public void setPlayerName(String name){
         playerName = name;
