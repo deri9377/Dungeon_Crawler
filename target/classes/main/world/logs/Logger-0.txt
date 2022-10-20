@@ -1,23 +1,15 @@
 null's health changed to:12
-null's health changed to:12
-null's health changed to:12
-null's health changed to:12
-null's health changed to:12
-null won against Blinker
-Blinker was defeated 
-null's health changed to:12
-null's health changed to:11
-null's health changed to:12
-null's health changed to:12
-null's health changed to:12
-null's health changed to:12
-null's health changed to:0
-Brawler was defeated 
-null was defeated 
-null's health changed to:12
-null's health changed to:13
-null's health changed to:12
-[Creature]Blinker moved into room: 1-0-0
-null's health changed to:12
-null's health changed to:12
-null's health changed to:13
+[Creature]Blinker moved into room: 2-2-2
+[Creature]Orbiter moved into room: 3-2-2
+[Creature]Seeker moved into room: 1-1-1
+bilbo baggins won against Seeker
+Seeker was defeated 
+[Creature]Blinker moved into room: 1-1-2
+[Creature]Orbiter moved into room: 1-0-1
+[Creature]Blinker moved into room: 3-1-1
+[Creature]Orbiter moved into room: 3-1-0
+[Creature]Seeker moved into room: 1-1-1
+bilbo baggins won against Seeker
+Seeker was defeated 
+[Creature]Blinker moved into room: 1-2-0
+[Creature]Orbiter moved into room: 1-0-1
