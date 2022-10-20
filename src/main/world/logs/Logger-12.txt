@@ -1,0 +1,6 @@
+[Creature]Blinker moved into room: 1-1-1
+[Creature]Orbiter moved into room: 3-2-2
+[Creature]Blinker moved into room: 4-2-2
+[Creature]Blinker moved into room: 3-2-1
+[Creature]Orbiter moved into room: 3-2-1
+[Creature]Orbiter moved into room: 1-1-2

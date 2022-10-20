@@ -199,7 +199,7 @@ public class World {
             } else if (action.equals("2") || action.equals("search")) {
                 SearchCommand sc = new SearchCommand(a, this);
                 sc.execute();
-            } else if (action.equals("3") || action.equals("Celebrate")) {
+            } else if (action.equals("3") || action.equals("celebrate")) {
                 //TODO: there is an issue here. We need to be able to celebrate without fighting
                 CelebrateCommand cc = new CelebrateCommand(a);
                 cc.execute();

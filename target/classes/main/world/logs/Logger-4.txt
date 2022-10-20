@@ -1,12 +1,14 @@
-[Adventurer]bilbo moved into room: 1-0-1
-[Creature]Blinker moved into room: 2-2-1
-[Creature]Orbiter moved into room: 2-1-2
-[Creature]Blinker moved into room: 3-2-2
-[Creature]Orbiter moved into room: 3-2-1
-[Creature]Seeker moved into room: 1-0-1
-bilbo won against Seeker
+bilbo baggins's health changed to:2
+Seeker won against bilbo baggins
+bilbo baggins won against Seeker
 Seeker was defeated 
-[Creature]Blinker moved into room: 1-1-1
-[Creature]Orbiter moved into room: 3-2-2
-[Creature]Blinker moved into room: 4-1-2
+[Creature]Blinker moved into room: 3-1-2
 [Creature]Orbiter moved into room: 1-2-0
+bilbo baggins won against Seeker
+Seeker was defeated 
+[Creature]Blinker moved into room: 3-2-0
+[Creature]Orbiter moved into room: 1-2-1
+[Creature]Blinker moved into room: 1-0-0
+[Creature]Orbiter moved into room: 4-2-2
+[Creature]Blinker moved into room: 1-2-0
+[Creature]Orbiter moved into room: 1-2-2

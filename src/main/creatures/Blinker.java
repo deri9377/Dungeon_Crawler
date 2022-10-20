@@ -33,7 +33,6 @@ public class Blinker extends Creature{
     public void move(World w) {
         w.getRoom(getLevel(), getY(), getX()).remove(this); // Remove from room so the blinkers dont duplicate on move
         Random rand = new Random();
-        System.out.println(getNumLevels());
         // need to add 1 to the random level so that level 0 is never chosen
         int tempLevel = rand.nextInt(getNumLevels()) + 1;
         // choose any random level within the width, depth bounds

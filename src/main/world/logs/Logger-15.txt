@@ -1,0 +1,11 @@
+[Adventurer]bilbo baggins celebrated:  dance 
+[Adventurer]bilbo baggins celebrated:  spin 
+[Adventurer]bilbo baggins celebrated:  shout 
+[Adventurer]bilbo baggins celebrated:  jump 
+[Adventurer]bilbo baggins celebrated:  griddy 
+[Creature]Blinker moved into room: 4-2-0
+[Creature]Orbiter moved into room: 3-2-1
+[Creature]Blinker moved into room: 3-0-1
+[Creature]Blinker moved into room: 2-0-0
+[Creature]Orbiter moved into room: 3-2-0
+[Creature]Orbiter moved into room: 1-2-2
